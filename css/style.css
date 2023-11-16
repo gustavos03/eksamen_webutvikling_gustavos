@@ -5,9 +5,13 @@
 }
 
 .navbar{
-    background-color: #fff;
-    padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
-
+    position: relative;
+    flex-direction: row;
+}
+.navbar a{
+    text-decoration: none;
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
 }
