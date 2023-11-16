@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
