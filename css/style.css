@@ -41,10 +41,30 @@ nav a {
 }
 
 .headline{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
     padding: 10px;
     margin: 10px;
+    background-color: grey;
+}
+.headline a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #e6bd43;
+    padding: 5px;
+    margin-top: 10px;
 }
 
+.subheading{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 25px;
+
+}
 
 #service-container {
     display: flex;
@@ -57,10 +77,51 @@ nav a {
 main {
     text-align: center;
 }
+
 .newsletter {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 400px; /* Juster denne verdien etter behov */
     margin: 0 auto;
+}
+
+.company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: grey;
+}
+aside{
+    display: flex;
+    justify-content: left;
+
+}
+
+.company a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #e6bd43;
+    max-width:fit-content;
+    padding: 5px;
+    margin: auto;
+
+}
+
+.company img{
+    max-width: 100%;
+    height: auto;
+
+}
+.read-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: grey;
 }
