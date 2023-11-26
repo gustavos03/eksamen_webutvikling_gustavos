@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header {
     display: grid;
@@ -14,7 +15,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-size: 18px;
     font-weight: bold;
 }
@@ -38,6 +39,7 @@ nav a {
     font-size: bold;
     text-decoration: none;
     color: #000000;
+    margin: 5px;
 }
 
 .headline{
@@ -45,8 +47,7 @@ nav a {
     justify-content: center; 
     flex-direction: column;
     padding: 10px;
-    margin: 10px;
-    background-color: grey;
+    background-color: rgb(176, 172, 172);
 }
 .headline a{
     display: flex;
@@ -56,6 +57,18 @@ nav a {
     background-color: #e6bd43;
     padding: 5px;
     margin-top: 10px;
+    font-size: 1rem;
+}
+
+.headline h1{
+    padding: 10px;
+}
+.read-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
 }
 
 .subheading{
@@ -66,33 +79,14 @@ nav a {
 
 }
 
-#service-container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 10px;
-    padding: 10px;
-}
-
-main {
-    text-align: center;
-}
-
-.newsletter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px; /* Juster denne verdien etter behov */
-    margin: 0 auto;
-}
-
 .company{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin: 10px;
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
+    border-color: #000000;
+    border-style: solid;
 }
 aside{
     display: flex;
@@ -100,28 +94,95 @@ aside{
 
 }
 
+.company p{
+    margin: 15px;
+}
 .company a{
     display: flex;
     justify-content: center;
     text-decoration: none;
     color: #000000;
-    background-color: #e6bd43;
+    background-color: #ffffff;
     max-width:fit-content;
     padding: 5px;
     margin: auto;
-
+    border-color: #000000;
+    border-style: solid;
 }
 
 .company img{
     max-width: 100%;
     height: auto;
+    margin-right: 10px;
 
 }
-.read-more{
+
+#service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px;
+    padding: 15px;
+    max-width: fit-content;
+}
+
+main {
+    text-align: center;
+}
+
+.newsletter {
+    display: grid;
+    flex-direction: grid;
+    align-items: center;
+    margin: 10px auto;
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+.newletter-form{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px auto;
+    background-color: #f0f0f0;
+    padding: 5px;
+    font: 0,5em sans-serif;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: row;
+    background-color: rgb(48, 47, 47);
     padding: 10px;
-    margin: 10px;
+    color: #ffffff;
+
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: row;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: grey;
+    padding: 30px;
+}
+
+.portfolio img{
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+#portfolio-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: grey;
+    padding: 30px;
 }
