@@ -151,38 +151,70 @@ main {
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: row;
+    justify-content: space-around;
     background-color: rgb(48, 47, 47);
     padding: 10px;
     color: #ffffff;
 
 }
-.social{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: row;
+footer *{
+    display: inline;
 }
+
 
 .portfolio{
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: grey;
-    padding: 30px;
+    padding: 50px;
 }
 
-.portfolio img{
-    max-width: 100%;
-    height: auto;
-    margin: 10px;
-}
-
-#portfolio-nav{
+.explore{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: grey;
-    padding: 30px;
+    justify-content: left;
+    color: #000000;
+    padding: 10px;
+    border-bottom: 2px solid #e6bd43;
+    margin-bottom: 10px;
 }
+
+.portfolio-nav{
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+.portfolio-nav a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    max-width:fit-content;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 5px;
+}
+
+.branding-header{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #e6bd43;
+    margin-bottom: 10px;
+}
+
+.branding{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin:auto;
+    text-align: justify;
+}
+
+.branding a{
+    font-size: large;
+
+}
+
