@@ -204,7 +204,13 @@ footer {
 .social{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+.social *{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
 }
 
 
