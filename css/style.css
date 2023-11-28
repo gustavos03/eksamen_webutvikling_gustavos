@@ -5,34 +5,63 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
-    display: grid;
-    grid-template-columns: auto 1fr; 
-    justify-content: space-between; 
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 15px;
     background-color: #f0f0f0;
+    margin: 5px;
+    align-items: center;
 }
 
 header a {
     text-decoration: none;
     color: #000000;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
 }
 header a:hover {
     text-decoration: underline;
+    text-decoration-color: #e6bd43;
+
+}
+
+header img {
+    height:auto; 
+    width: 75px;
 }
 
 nav {   
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    max-width: auto;
+
 }
 
 nav a {
     margin-right: 15px;
 }
+@media only screen and (max-width: 380px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
 
+    nav a {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        font-weight: ;
+    }
+}
+
+
+.container{
+    margin: 15px;
+}
 .yellow-button{
     background-color: #e6bd43;
     padding: 5px;
@@ -40,6 +69,11 @@ nav a {
     text-decoration: none;
     color: #000000;
     margin: 5px;
+}
+.yellow-button a:hover {
+    background-color: black;
+    color: yellow;
+
 }
 
 .headline{
@@ -117,15 +151,22 @@ aside{
 
 }
 
-#service-container {
+.service-container {
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
-    margin: 10px;
-    padding: 15px;
-    max-width: fit-content;
+    justify-content: space-evenly;
+    padding: 10px;
+    max-resolution: auto;
+    
 }
 
+.service-container p{
+    margin: 10px;
+    padding: 10px;
+    max-width: 20vw;
+    text-align: center;
+    margin-left: auto; 
+}
 main {
     text-align: center;
 }
@@ -138,6 +179,7 @@ main {
     background-color: #f0f0f0;
     padding: 15px;
 }
+
 .newletter-form{
     display: flex;
     justify-content: center;
@@ -148,35 +190,39 @@ main {
     font: 0,5em sans-serif;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(48, 47, 47);
+    background-color: rgb(32, 32, 32);
+    color: white;
+    align-items: center;
     padding: 10px;
-    color: #ffffff;
-
-}
-footer *{
-    display: inline;
+    margin: 5px;
 }
 
+.social{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+
+
+.title{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #e6bd43;
+    margin-bottom: 10px;
+}
 
 .portfolio{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-content: space-evenly;
     background-color: grey;
     padding: 50px;
-}
-
-.explore{
-    display: flex;
-    justify-content: left;
-    color: #000000;
-    padding: 10px;
-    border-bottom: 2px solid #e6bd43;
-    margin-bottom: 10px;
 }
 
 .portfolio-nav{
@@ -185,6 +231,7 @@ footer *{
     padding: 10px;
     
 }
+
 .portfolio-nav a{
     text-decoration: none;
     color: #000000;
@@ -196,25 +243,91 @@ footer *{
     margin-bottom: 5px;
 }
 
-.branding-header{
-    text-align: center;
+.branding{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    text-align: left;
     padding: 10px;
-    border-bottom: 2px solid #e6bd43;
-    margin-bottom: 10px;
 }
+
 
 .branding{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    margin:auto;
-    text-align: justify;
+    gap: 10px;
+    justify-content: space-around;
+    margin: auto;
+    align-items: left;
+    text-align: left;
+    padding: 10px;
 }
 
-.branding a{
-    font-size: large;
+/* about */
 
+.about-company {
+    margin: 10px;
+    padding: 10px;
 }
+
+.about-company p {
+    margin: auto;
+    padding: 20px;
+    max-width: 20vw;
+    text-align: center;
+    margin-left: auto; 
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    align-items: center;
+    padding: 40px;
+    background-color: #e6bd43;
+}  
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: left;
+    padding: 40px;
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+.contact-article{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items: center;
+    padding: 40px;
+    background-color: beige;
+    align-items: baseline;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: left;
+    padding: 40px;
+    text-align: left;
+    justify-content: space-evenly;
+}
+.info p{
+    margin: 10px;
+    text-align: left;
+}
+
+.our-services{
+    margin: 10px;
+    padding: 40px;
+}
+
 
