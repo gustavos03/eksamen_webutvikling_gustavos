@@ -7,88 +7,102 @@
     <link href="./fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
     <link href="./fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title> 
-    <title>Min nettside</title>
+    <title>About</title> 
 </head>
-<body>     
+<body> 
+    <a href="#navigation" class="go-top-btn">
+        <i class="fa-solid fa-arrow-up fa-xl"></i>
+    </a>
     <header>
-        <img src="./ressurser/logo1.png" alt="">
-        <nav>
+        <a href="index.html">
+            <img src="./ressurser/logo1.png" alt="">
+        </a>
+        <nav id="navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="produkt.html">Portfolio</a>
                 <a href="#" class="yellow-button">Contact</a>
         </nav>
-    </header> 
-     
+    </header>
     <main>
-        <section class="about-company">
-            <h4>Company Name</h4>
-            <h2>About Our Company</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    In luctus consequat quam non sollicitudin. Proin mollis scelerisque nisi, sit amet semper dui mollis eu.
-                    Pellentesque tristique pharetra dignissim. Donec auctor dignissim iaculis. Pellentesque et gravida lectus. 
-                    Morbi luctus mattis feugiat.
-                    Praesent non est efficitur lorem sodales ornare sed ac ipsum.</p>
-            <a href="#" class="yellow-button">Get in touch with us</a>
-        </section>
-        <h2>Our services</h2>
-        <section class="service-container">
-            <article>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </article>
-            <article>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </article>
-            <article>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </article>
-            <article>
-                    <h3>Branding</h3>
+        <div class="container">
+            <section class="about-company">
+                <h4>Company Name</h4>
+                <h2>About Our Company</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        In luctus consequat quam non sollicitudin. Proin mollis scelerisque nisi, sit amet semper dui mollis eu.                            Pellentesque tristique pharetra dignissim. Donec auctor dignissim iaculis. Pellentesque et gravida lectus. 
+                        Morbi luctus mattis feugiat.
+                        Praesent non est efficitur lorem sodales ornare sed ac ipsum.</p>
+                <a href="#contact" class="yellow-button">Get in touch with us</a>
+            </section>
+            <h2>Our services</h2>
+            <section class="service-container">
+                <section>
+                    <i class="fa-solid fa-users"></i>
+                    <h4>Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </article>
-        </section>
-        <article class="clients">
-            <h2>Some of our clients</h2>
-            <p>"Clients"</p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </article>
-        <article class="contact-article">
-            <section class="contact">
-                    <h3>Send us a message</h3>
-                    <article class="form">
-                        <form action="">
-                            <h4>Name</h4>
-                            <input type="text" placeholder="Name">
-                            <h4>Email</h4>
-                            <input type="text" placeholder="Email">
-                            <h4>Subject</h4>
-                            <input type="text" placeholder="Subject">
-                            <h4>Message</h4>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                            <button>Send</button>
-                        </form>
-                    </article>
-            </section>
-            <section class="info">
-                <h3>Contact information</h3>
-                <p>At vero eos et accuamus et iusto odio dignimissimor ducimus qui blanditi praesentium 
-                    viluptatum delenti atque corrupti quos dolorres et quas molestias excepturi sint</p>
-                <p>B R A Veien 4, 1757 Halden</p>
-                <p>69 60 80 00</p>
-                <p>postmottak@hiof.no</p>
-            </section>
-        </article>
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.211022120658!2d11.34938987709919!3d59.12886967451783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6d9419ecb%3A0x109c7e7c9cd6160!2sRemmen%20H%C3%B8gskolen!5e0!3m2!1sno!2sno!4v1700589803126!5m2!1sno!2sno" 
-        width="container" height="400" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-    </main>
+                </section>
 
+                <section>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h4>Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                </section>
+
+                <section >
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Development</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                </section>
+
+                <section> 
+                    <i class="fa-solid fa-wifi"></i>
+                    <h4>Support</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                </section>
+            </section>
+            <article class="clients">
+                <h2>Some of our clients</h2>
+                <section class="clients-img">
+                    <img src="ressurser/logo1.png" alt="">
+                    <img src="ressurser/logo2.png" alt="">
+                    <img src="ressurser/logo3.png" alt="">
+                </section>
+            </article>
+            <article class="contact-article">
+                <section id="contact">
+                        <h3>Send us a message</h3>
+                        <article class="form">
+                            <form action="input">
+                                <h4>Name</h4>
+                                <input type="text" placeholder="Name">
+                                <h4>Email</h4>
+                                <input type="text" placeholder="Email">
+                                <h4>Subject</h4>
+                                <input type="text" placeholder="Subject">
+                                <h4>Message</h4>
+                                <textarea name="form" id="input-form" cols="30" rows="10" placeholder="Message"></textarea>
+                                <button>Send</button>
+                            </form>
+                        </article>
+                </section>
+                <section class="info">
+                    <h3>Contact information</h3>
+                    <p>At vero eos et accuamus et iusto odio dignimissimor ducimus qui blanditi praesentium 
+                        viluptatum delenti atque corrupti quos dolorres et quas molestias excepturi sint</p>
+                    <p>B R A Veien 4, 1757 Halden</p>
+                    <p>69 60 80 00</p>
+                    <a href="postmottak@hiof.no">postmottak@hiof.no</a>
+                </section>
+            </article>
+         <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.210857602424!2d11.349389876671896!3d59.1288724270507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6d9419ecb%3A0x109c7e7c9cd6160!2sRemmen%20H%C3%B8gskolen!5e0!3m2!1sno!2sno!4v1701261691745!5m2!1sno!2sno" 
+            width="1500" height="400" style="border:0;" 
+            allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </section>
+    </div>
+    </main>
     <footer>
         <img src="./ressurser/logo1.png" alt="" >
         <p>Company copyright 2023</p>

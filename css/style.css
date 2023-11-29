@@ -63,17 +63,40 @@ nav a {
     margin: 15px;
 }
 .yellow-button{
+    justify-content: center;
+    max-width: fit-content;
     background-color: #e6bd43;
     padding: 5px;
     font-size: bold;
     text-decoration: none;
     color: #000000;
     margin: 5px;
+
+    
 }
 .yellow-button a:hover {
     background-color: black;
     color: yellow;
 
+}
+.go-top-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+.go-top-btn:hover{
+    background-color: #e6bd43;
+    color: #000000;
 }
 
 .headline{
@@ -156,7 +179,6 @@ aside{
     flex-direction: row;
     justify-content: space-evenly;
     padding: 10px;
-    max-resolution: auto;
     
 }
 
@@ -166,6 +188,7 @@ aside{
     max-width: 20vw;
     text-align: center;
     margin-left: auto; 
+    margin:20px;
 }
 main {
     text-align: center;
@@ -201,6 +224,12 @@ footer {
     margin: 5px;
 }
 
+
+footer img{
+    max-width: 100px;
+    height: auto;
+}
+
 .social{
     display: flex;
     flex-direction: row;
@@ -217,7 +246,7 @@ footer {
 
 .title{
     text-align: center;
-    padding: 10px;
+    padding: 25px;
     border-bottom: 2px solid #e6bd43;
     margin-bottom: 10px;
 }
@@ -235,7 +264,11 @@ footer {
     text-align: left;
     margin-bottom: 10px;
     padding: 10px;
-    
+}
+
+.portfolio-nav a:hover{
+    background-color: #e6bd43;
+    color: #000000;
 }
 
 .portfolio-nav a{
@@ -249,7 +282,7 @@ footer {
     margin-bottom: 5px;
 }
 
-.branding{
+.article{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -262,32 +295,19 @@ footer {
 }
 
 
-.branding{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: space-around;
-    margin: auto;
-    align-items: left;
-    text-align: left;
-    padding: 10px;
-}
 
 /* about */
 
 .about-company {
+    display: flex;
+    flex-direction: column;
     margin: 10px;
-    padding: 10px;
+    padding: 50px;
+    background-color: grey;
+    align-items: center;
 }
 
-.about-company p {
-    margin: auto;
-    padding: 20px;
-    max-width: 20vw;
-    text-align: center;
-    margin-left: auto; 
-}
+
 
 .clients {
     display: flex;
@@ -298,7 +318,16 @@ footer {
     background-color: #e6bd43;
 }  
 
-.contact{
+.clients-img{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+
+#contact{
     display: flex;
     flex-direction: column;
     margin: 10px;
